@@ -63,11 +63,14 @@
   .hero {
     --hero-image: url('images/Hero_Background.png');
     background:
-      linear-gradient(rgba(15, 23, 42, 0.55), rgba(15, 23, 42, 0.68)),
-      var(--hero-image) center / cover no-repeat,
-      linear-gradient(135deg, #33415c, #1c2a3f);
+      linear-gradient(rgba(15, 23, 42, 0.45), rgba(15, 23, 42, 0.55)),
+      var(--hero-image) center / contain no-repeat,
+      #0d1b2e;
     color: #fff;
-    padding: 5rem 0 7rem;
+    min-height: 320px;
+    display: flex;
+    align-items: center;
+    padding: 3rem 0;
     margin-bottom: 2.5rem;
   }
   .hero h1 { color: #fff; margin-bottom: 0.5rem; }
